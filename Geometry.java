@@ -2,12 +2,16 @@
 /**
  * Write a description of class Geometry here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Sean Donlin 
+ * @version 8/30/17
  */
 public class Geometry 
 {
     
+    /**
+     * double is used to show a decimal!
+     * 
+     */
     public static double triangleArea(double base, double height) 
     {
         double area = base * height / 2.0;
@@ -15,16 +19,25 @@ public class Geometry
         return area;
     }
     
+    /**
+     * 
+     */
     public static double rectangleArea(double length, double width) 
     {
         return length * width;
     }
     
+    /**
+     * 
+     */
     public static double sphereVolume(double radius) 
     {
         return 4.0 / 3.0 * Math.PI * Math.pow(radius, 3);
     }
     
+    /**
+     * 
+     */
     public static void main(String[] args) 
     {
         double ta1 = triangleArea(4.2, 8.1);
