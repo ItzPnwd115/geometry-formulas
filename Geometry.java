@@ -20,7 +20,7 @@ public class Geometry
     }
     
     /**
-     * 
+     * Easy...
      */
     public static double rectangleArea(double length, double width) 
     {
@@ -28,7 +28,7 @@ public class Geometry
     }
     
     /**
-     * 
+     * Math.PI for 3.14.... Math.pow for an exponent, in this case 3.
      */
     public static double sphereVolume(double radius) 
     {
@@ -36,7 +36,7 @@ public class Geometry
     }
     
     /**
-     * 
+     * Easy...
      */
     public static double parallelogramArea(double base, double hight)
     {
@@ -46,7 +46,7 @@ public class Geometry
     }
     
     /**
-     * Talk to Cooper about this problem.
+     * Easy..
      */
     public static double trapezoidArea(double abase, double bbase, double hight)
     {
@@ -56,7 +56,7 @@ public class Geometry
     }
     
     /**
-     * 
+     * Easy..
      */
     public static double prismVolume(double width, double length, double hight)
     {
@@ -66,7 +66,7 @@ public class Geometry
     }
     
     /**
-     * 
+     * Explained above.
      */
     public static double coneVolume(double radius, double hight)
     {
@@ -76,7 +76,7 @@ public class Geometry
     }
     
     /**
-     * Talk to Cooper about this problem. no parethasis
+     * Any way to make this smaller?
      */
     public static double prismSA(double width, double hight, double length)
     {
@@ -86,7 +86,7 @@ public class Geometry
     }
     
     /**
-     * 
+     * Explained above.
      */
     public static double sphereSA(double radius)
     {
@@ -96,7 +96,7 @@ public class Geometry
     }
     
     /**
-     * 
+     * Math.sqrt for a Squareroot.
      */
     public static double hypotenuseRT(double a, double b)
     {
@@ -107,7 +107,10 @@ public class Geometry
     }
     
     /**
-     * 
+     * Took the coresponding valuse added them and set them equal to a new variable x3 and y3.
+     * Set them both to the 2nd power. Made them a new variable x4 and y4.
+     * Added them  together and made z1.
+     * Took the square root of z1.
      */
     public static double distanceP(double x1, double y1, double x2, double y2)
     {
@@ -122,19 +125,20 @@ public class Geometry
     }
     
     /**
-     * 
+     * Simple..
      */
     public static double slope(double x1, double y1, double x2, double y2)
     {
         double x3 = x2 - x1;
         double y3 = y2 -y1;
-
+        double m = y3 / x3;
+        
+        return m;
     }
     
     /**
      * Example: ta1 is defined to triangleArea which is sent to function triangleArea.
      * Then onece it is finished, it is sent to system print.
-     * Ones where I have to talk to Cooper are the ones where I have to prioritized order of operations.
      */
     public static void main(String[] args) 
     {
@@ -184,9 +188,11 @@ public class Geometry
         
         double dst = distanceP(5, 8, 9, 5);
         System.out.println("Distance: " + dst);
+        System.out.println();
         
         double m = slope (5, 4, 10, 11);
-        System.out.print("Slope: ");
+        System.out.print("Slope: " + m);
+        System.out.println();
         
     }
 }
