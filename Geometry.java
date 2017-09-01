@@ -9,8 +9,10 @@ public class Geometry
 {
     
     /**
-     * double is used to show a decimal!
-     * 
+     * Calculates area of a triangle.
+     * @param base  Base of the traingle.
+     * @param height  Height of the triangle.
+     * @return Area of triangle.
      */
     public static double triangleArea(double base, double height) 
     {
@@ -20,7 +22,10 @@ public class Geometry
     }
     
     /**
-     * Easy...
+     * Calculates area of a rectangle.
+     * @param length  length of rectangle.
+     * @param width  width of rectangle.
+     * @return Area of rectangle.
      */
     public static double rectangleArea(double length, double width) 
     {
@@ -28,7 +33,9 @@ public class Geometry
     }
     
     /**
-     * Math.PI for 3.14.... Math.pow for an exponent, in this case 3.
+     * Calculates volume of a sphere.
+     * @param radius  radius of sphere.
+     * @return Volume of sphere.
      */
     public static double sphereVolume(double radius) 
     {
@@ -36,57 +43,77 @@ public class Geometry
     }
     
     /**
-     * Easy...
+     * Calculates area of a parallelogram.
+     * @param base  base of parallelogram.
+     * @param height  height of parallelogram.
+     * @return Area of parallelogram.
      */
-    public static double parallelogramArea(double base, double hight)
+    public static double parallelogramArea(double base, double height)
     {
-        double area = base * hight;
+        double area = base * height;
         
         return area;
     }
     
     /**
-     * Easy..
+     * Calculates area of a trapezoid.
+     * @param abase  first base of a trapezoid.
+     * @param bbase  second base of a trapezoid.
+     * @param height  height of trapezoid.
+     * @return Area of trapezoid.
      */
-    public static double trapezoidArea(double abase, double bbase, double hight)
+    public static double trapezoidArea(double abase, double bbase, double height)
     {
-        double area = abase + bbase / 2.0 * hight;
+        double area = abase + bbase / 2.0 * height;
         
         return area;
     }
     
     /**
-     * Easy..
+     * Calculates volume of a rectangular prism.
+     * @param width  width of prism.
+     * @param length  length of prism.
+     * @param height  height of prism.
+     * @return Volume of prism.
      */
-    public static double prismVolume(double width, double length, double hight)
+    public static double prismVolume(double width, double length, double height)
     {
-        double volume = width * length * hight;
+        double volume = width * length * height;
         
         return volume;
     }
     
     /**
-     * Explained above.
+     * Calculates volume of a cone.
+     * @param radius  radius of the cone.
+     * @param height  height of the cone.
+     * @return Volume of cone.
      */
-    public static double coneVolume(double radius, double hight)
+    public static double coneVolume(double radius, double height)
     {
-        double volume = Math.PI * Math.pow(radius, 2) * hight / 3.0;
+        double volume = Math.PI * Math.pow(radius, 2) * height / 3.0;
         
         return volume;
     }
     
     /**
-     * Any way to make this smaller?
+     * Calculates surface area of a prism.
+     * @param width  width of prism.
+     * @param height  height of prism.
+     * @param length  length of prism.
+     * @return Surface area of prism.
      */
-    public static double prismSA(double width, double hight, double length)
+    public static double prismSA(double width, double height, double length)
     {
-        double SA = 2 * width * hight + 2 * hight * length + 2 * length * width;
+        double SA = 2 * width * height + 2 * height * length + 2 * length * width;
         
         return SA;
     }
     
     /**
-     * Explained above.
+     * Calculates surface area of a sphere.
+     * @param radius  radius of the sphere.
+     * @return Surface area of a sphere.
      */
     public static double sphereSA(double radius)
     {
@@ -96,7 +123,10 @@ public class Geometry
     }
     
     /**
-     * Math.sqrt for a Squareroot.
+     * Calculates the hypotenuse of a right triangle.
+     * @param a  a side of right triangle.
+     * @param b  b side of right triangle.
+     * @return Length of side c.
      */
     public static double hypotenuseRT(double a, double b)
     {
@@ -107,10 +137,12 @@ public class Geometry
     }
     
     /**
-     * Took the coresponding valuse added them and set them equal to a new variable x3 and y3.
-     * Set them both to the 2nd power. Made them a new variable x4 and y4.
-     * Added them  together and made z1.
-     * Took the square root of z1.
+     * Calculates distance between two points.
+     * @param x1  x1 corodinates on a graph.
+     * @param y1  y1 corodinates on a graph.
+     * @param x2  x2 corodinates on a graph.
+     * @param y2  y2 corodinates on a graph.
+     * @return Distance between two points.
      */
     public static double distanceP(double x1, double y1, double x2, double y2)
     {
@@ -125,7 +157,12 @@ public class Geometry
     }
     
     /**
-     * Simple..
+     * Calculates slope of a graph
+     * @param x1  x1 corodinates on a graph.
+     * @param y1  y1 corodinates on a graph.
+     * @param x2  x2 corodinates on a graph.
+     * @param y2  y2 corodinates on a graph.
+     * @return Slope of graph.
      */
     public static double slope(double x1, double y1, double x2, double y2)
     {
